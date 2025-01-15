@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendataan Pegawai</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-6">
+
+  <div class="max-w-xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+    <h1 class="text-2xl font-bold mb-4">Kelola Data Pegawai</h1>
+    <a href="index.html" class="text-blue-500 underline mb-6 block">Home</a>
+
+    <h2 class="text-xl font-semibold mb-4">Pendataan Pegawai</h2>
+
+    <form>
+      <!-- Nama Siswa -->
+      <div class="mb-4">
+        <label for="nama" class="block font-semibold mb-1">Nama Pegawai:</label>
+        <input type="text" id="nama" class="w-full border border-gray-300 p-2 rounded-md"
+          placeholder="Masukkan nama siswa">
+      </div>
+
+      <!-- Tempat, Tgl Lahir -->
+      <div class="mb-4 grid grid-cols-2 gap-4">
+        <div>
+          <label for="tempat" class="block font-semibold mb-1">Tempat:</label>
+          <input type="text" id="tempat" class="w-full border border-gray-300 p-2 rounded-md"
+            placeholder="Masukkan tempat lahir">
+        </div>
+        <div>
+          <label for="tgl" class="block font-semibold mb-1">Tanggal Lahir:</label>
+          <input type="date" id="tgl" class="w-full border border-gray-300 p-2 rounded-md">
+        </div>
+      </div>
+
+      <!-- Gender -->
+      <div class="mb-4">
+        <label class="block font-semibold mb-1">Gender:</label>
+        <div class="flex items-center space-x-4">
+          <label class="flex items-center">
+            <input type="radio" name="gender" value="L" class="mr-2"> L
+          </label>
+          <label class="flex items-center">
+            <input type="radio" name="gender" value="P" class="mr-2"> P
+          </label>
+        </div>
+      </div>
+
+      <!-- NIK -->
+      <div class="mb-4">
+        <label for="nik" class="block font-semibold mb-1">NIK:</label>
+        <input type="text" id="nik" class="w-full border border-gray-300 p-2 rounded-md" placeholder="Masukkan NIK">
+      </div>
+
+      <!-- Alamat -->
+      <div class="mb-4">
+        <label for="alamat" class="block font-semibold mb-1">Alamat:</label>
+        <textarea type="text" id="alamat" class="rows-6 w-full border border-gray-300 p-2 rounded-md"
+          placeholder="Masukkan alamat"></textarea>
+      </div>
+
+      <!-- Jabatan -->
+      <div class="mb-6">
+        <label for="Jabatan" class="block font-semibold mb-1">Jabatan:</label>
+        <select id="Jabatan" class="w-full border border-gray-300 p-2 rounded-md">
+          <option value="Kepala Sekolah">Kepala Sekolah</option>
+          <option value="Komite Sekolah">Komite Sekolah</option>
+          <option value="Waka Kurikulum">Waka Kurikulum</option>
+          <option value="Waka Kesiswaan">Waka Kesiswaan</option>
+          <option value="Waka Sarana">Waka Sarana</option>
+          <option value="Guru">Guru</option>
+          <option value="Staff">Staff</option>
+        </select>
+      </div>
+
+      <!-- Telpon -->
+      <div class="mb-4">
+        <label for="telpon" class="block font-semibold mb-1">Telpon/HP:</label>
+        <input type="text" id="telpon" class="w-full border border-gray-300 p-2 rounded-md"
+          placeholder="Masukkan nomor telepon">
+      </div>
+
+      <!-- Tombol -->
+      <div class="flex space-x-4">
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Simpan</button>
+        <button type="reset" class="bg-gray-300 px-4 py-2 rounded-md hover:bg-gray-400">Batal</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>
